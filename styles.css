@@ -1,3 +1,8 @@
+body{
+  opacity: 0.80;
+  width: 100%;
+}
+
 @font-face {
   font-family: 'LibreBarcode';
   src: url('/Fonts/LibreBarcode.woff') format('woff');
@@ -6,27 +11,28 @@
   
 }
 
-.desktop-1
-{
+.desktop-1 {
 position:absolute;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 }
-.navbar
-{
-width:100%;
-height:92px;
-position:absolute;
-opacity: 0.75;
- 
+
+.navbar {
+ top: 0;
+ display: grid;
+ grid-template-rows: 20px 20px 20px 20px 20px;
+ width:100%;
+ height:25%;
+ position:absolute;
+ z-index: 1000;
+ overflow: hidden;
 }
 
 .navbarmainrectangle {
-background-color:#bfff00;
-height:90px;
-width:100%;
-opacity: 0.73;
+  background-color:#bfff00;
+  height:90px;
+  width:100%;
 }
 
 .creepcastnavrectangle {
@@ -38,24 +44,39 @@ top:6px;
 position:absolute;
 }
 
-.reddit
-{
-color:#000000;
-filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+.merch {
+  color:#000000;
+  filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  grid-row: 1;
+ text-align:left;
+ vertical-align:text-top;
+ font-size:75px;
+ font-family:'LibreBarcode';
+ left:177px;
+ top:8px;
+ width:124px;
+ height:82px;
+ position:absolute;
+ line-height:auto;
+}
+
+
+.papameat {
+  color:#000000;
+  filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 text-align:left;
 vertical-align:text-top;
 font-size:75px;
 font-family:'LibreBarcode';
-left:1207px;
-top:10px;
-width:152px;
+left:449px;
+top:8px;
+width:230px;
 height:82px;
 position:absolute;
 line-height:auto;
 }
 
-.wendigoon
-{
+.wendigoon {
 color:#000000;
 filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 text-align:left;
@@ -70,39 +91,22 @@ position:absolute;
 line-height:auto;
 }
 
-.papameat
-{
+.reddit {
 color:#000000;
 filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 text-align:left;
 vertical-align:text-top;
 font-size:75px;
 font-family:'LibreBarcode';
-left:449px;
-top:8px;
-width:230px;
+left:1207px;
+top:10px;
+width:152px;
 height:82px;
 position:absolute;
 line-height:auto;
+}
 
-}
-.merch
-{
-color:#000000;
-filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
-text-align:left;
-vertical-align:text-top;
-font-size:75px;
-font-family:'LibreBarcode';
-left:177px;
-top:8px;
-width:124px;
-height:82px;
-position:absolute;
-line-height:auto;
-}
-.creepcastnav2
-{
+.creepcastnav2 {
 height:71px;
 width:79.11428833007812px;
 left:15px;
@@ -110,11 +114,132 @@ top:10px;
 position:absolute;
 }
 
-
-.footer
-{
-background-color:#bfff00;
-height:102px;
-width:1457px;
+.mainmiddlecontainer {  
+  height: 70%;
+  width: 25%;
+  left: 40%;
+  top: 50%;
+  position: relative;
 }
 
+.creepcastmain img {
+  height: 70%;
+  width: 100%;
+  top: 30%;
+  left: 15%;
+  overflow: hidden;
+ position:absolute;
+ z-index: 2;
+}
+
+.creeprectangle {
+background-color:#000000;
+height:390px;
+width:120%;
+z-index: 1;
+top: 50%;
+left: 10%;
+}
+
+.carusell {
+  width:95%;
+height:263px;
+position:absolute;
+opacity: 0.85;
+}
+
+.arrorleftrectangle {
+background-color:#000000;
+height:261px;
+width:68px;
+transform:rotate(-180deg);
+left:68px;
+position:absolute;
+top:50%;
+}
+
+.arrorrightrectangle {
+background-color:#000000;
+height:261px;
+width:68px;
+left:1344px;
+position:absolute;
+top:50%;
+}
+
+.applerectangle {
+background-color:#000000;
+height:263px;
+width:399px;
+left:153px;
+position:absolute;
+top:50%;
+}
+
+.ytrectangle {
+background-color:#000000;
+height:263px;
+width:280px;
+left:596px;
+position:absolute;
+top:50%;
+}
+
+.spotifyrectangle {
+background-color:#000000;
+height:263px;
+width:396px;
+left:920px;
+position:absolute;
+top:50%;
+}
+
+.yt2 {
+height:225px;
+width:225px;
+left:623px;
+position:absolute;
+top:60%;
+}
+
+.spotify2 {
+height:96px;
+width:320px;
+left:958px;
+position:absolute;
+top:80%;
+}
+
+.apple2 {
+height:216px;
+width:368.5970458984375px;
+left:168px;
+position:absolute;
+top:60%;
+}
+
+.arrowleft {
+height:82px;
+width:34px;
+left:94px;
+position:absolute;
+top:80%;
+}
+
+.arrorright2 {
+height:82px;
+width:34px;
+left:1361px;
+position:absolute;
+top:80%;
+}
+
+.footer {
+  background-color: #bfff00;
+  height: 40px;
+  width: 100%;
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  z-index: 1000; 
+}
