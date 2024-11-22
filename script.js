@@ -31,3 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     updateCarousel();
   });
+
+
+let startTime = Date.now();
+ function updateTimer() {
+    let elapsedTime = Date.now() - startTime;
+    let seconds = Math.floor(elapsedTime / 1000);
+    console.clear();
+    console.log(`You have been sus for: ${seconds} seconds`);
+}
+setInterval(updateTimer, 1000);
